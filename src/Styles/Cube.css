@@ -1,0 +1,69 @@
+.background-container {
+  margin: 4rem auto;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cube3d {
+  transform-style: preserve-3d;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forward-animation {
+  animation: spin 20s linear infinite;
+}
+.reverse-animation {
+  animation: spin 20s linear infinite reverse;
+}
+.face {
+  z-index: -1;
+  opacity: 0.5;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cube-icon {
+  height: 3rem;
+}
+.cubefront {
+  background-color: rgb(56, 97, 136);
+  transform: translatez(2rem);
+}
+.cubeleft {
+  background-color: rgb(113, 206, 110);
+  transform: rotatey(90deg) translatez(2rem);
+}
+.cuberight {
+  background-color: rgb(214, 76, 111);
+  transform: rotatey(270deg) translatez(2rem);
+}
+.cubeback {
+  background-color: rgb(209, 211, 79);
+  transform: rotatey(180deg) translatez(2rem);
+}
+.cubetop {
+  background-color: rgb(148, 46, 122);
+  transform: rotatex(90deg) translatez(2rem);
+}
+.cubebottom {
+  background-color: rgb(72, 52, 129);
+  transform: rotatex(-90deg) translatez(2rem);
+}
+@keyframes spin {
+  0% {
+    transform: rotate3d(0, 1, 1, 50deg) rotatex(30deg);
+  }
+  50% {
+    transform: rotate3d(0, 1, 1, 230deg) rotatex(50deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 1, 410deg) rotatex(30deg);
+  }
+}
