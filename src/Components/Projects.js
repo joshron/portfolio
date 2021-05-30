@@ -5,7 +5,7 @@ const Projects = () => {
       <div className="project-card">
         <h3>PDF GET</h3>
         <p>A free online PDF editing tool. All code is ran client side using the pdf-lib api.</p>
-        <a href="https://pdfget.app" target="_blank">Link</a>
+        <a href="https://pdfget.app" target="_blank" rel="noreferrer">Link</a>
       </div>
     </div>
   )
