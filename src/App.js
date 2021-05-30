@@ -5,6 +5,7 @@ import Skills from './Components/Skills';
 import Cube from './Components/Cube';
 import Nav from './Components/Nav';
 import Contact from './Components/Contact';
+import Projects from './Components/Projects';
 
 function App() {
   return (
@@ -16,8 +17,10 @@ function App() {
       <Cube direction={"reverse"} />
       <Skills />
       <Cube direction={"forward"} />
-      <Contact />
+      <Projects />
       <Cube direction={"reverse"} />
+      <Contact />
+      <Cube direction={"forward"} />
     </div>
   );
 }

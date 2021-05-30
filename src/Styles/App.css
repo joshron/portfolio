@@ -40,13 +40,13 @@ header h1 {
 header p {
   font-size: 3rem;
 }
-.about, .skills, .contact {
+.about, .skills, .contact, .Projects {
   padding: 0 2rem;
   width: 100%;
   max-width: 40rem;
   font-size: 2rem;
 }
-.skills h2 {
+h2 {
   font-size: 2rem;
 }
 li {
@@ -71,6 +71,13 @@ ul {
 .contact p a {
   color: yellow;
 }
+.project-card {
+  background-color: white;
+  color:rgb(26, 32, 49);
+  padding: 1rem;
+  margin-top: 1rem;
+  
+}
 
 @media screen and (max-width: 490px) {
   header h1 {
@@ -79,10 +86,10 @@ ul {
   header p {
     font-size: 2rem;
   }
-  .about, .skills, .contact {
+  .about, .skills, .contact, .Projects {
     font-size: 1.5rem;
   }
-  .skills h2 {
+  h2 {
     font-size: 1.5rem;
   }
   li {
